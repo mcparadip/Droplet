@@ -2,6 +2,7 @@ var today = new Date();
 var h = today.getHours();
 var m = today.getMinutes();
 var s = today.getSeconds();
+var timeFadeInt = 125;
 
 function pad(num) {
   var s = "0" + num;
