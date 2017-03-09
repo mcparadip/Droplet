@@ -14,7 +14,7 @@ body {
   width: 100%;
   margin: 20px;
   color: white;
-  font-size: 15px;
+  font-size: 25px;
   overflow: hidden;
   text-align: center;
   display: flex;
@@ -45,8 +45,7 @@ img#bg {
 }
 
 h1 {
-  font-size: 150px;
-  font-weight: 400;
+  font-size: 200px;
 }
 
 a {
