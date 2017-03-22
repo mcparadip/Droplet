@@ -22,18 +22,18 @@ function updateTime() {
   m = today.getMinutes();
   s = today.getSeconds();
 
-  if ($("h").text() != h) {
-    $("h").fadeOut(timeFadeInt, function() {
+  if ($("hour").text() != h) {
+    $("hour").fadeOut(timeFadeInt, function() {
       $(this).text(pad(h)).fadeIn(timeFadeInt);
     });
   }
-  if ($("m").text() != m) {
-    $("m").fadeOut(timeFadeInt, function() {
+  if ($("min").text() != m) {
+    $("min").fadeOut(timeFadeInt, function() {
       $(this).text(pad(m)).fadeIn(timeFadeInt);
     });
   }
-  if ($("s").text() != s) {
-    $("s").fadeOut(timeFadeInt, function() {
+  if ($("sec").text() != s) {
+    $("sec").fadeOut(timeFadeInt, function() {
       $(this).text(pad(s)).fadeIn(timeFadeInt);
     });
   }
