@@ -41,10 +41,10 @@ function updateTime() {
 }
 
 $(function() {
-  $("body.fade").fadeIn(400).removeClass("fade");
   $("h").text(pad(h));
   $("m").text(pad(m));
   $("s").text(pad(s));
+  $("body.fade").fadeIn(400).removeClass("fade");
   $("#date").text(fullDate())
   setInterval(updateTime, 1000);
 });
