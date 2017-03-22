@@ -41,9 +41,9 @@ function updateTime() {
 }
 
 $(function() {
-  $("h").text(pad(h));
-  $("m").text(pad(m));
-  $("s").text(pad(s));
+  $("hour").text(pad(h));
+  $("min").text(pad(m));
+  $("sec").text(pad(s));
   $("body.fade").fadeIn(400).removeClass("fade");
   $("#date").text(fullDate())
   setInterval(updateTime, 1000);
