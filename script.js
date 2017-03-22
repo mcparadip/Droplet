@@ -22,18 +22,18 @@ function updateTime() {
   m = today.getMinutes();
   s = today.getSeconds();
 
-  if ($("#h").text() != h) {
-    $("#h").fadeOut(timeFadeInt, function() {
+  if ($("h").text() != h) {
+    $("h").fadeOut(timeFadeInt, function() {
       $(this).text(pad(h)).fadeIn(timeFadeInt);
     });
   }
-  if ($("#m").text() != m) {
-    $("#m").fadeOut(timeFadeInt, function() {
+  if ($("m").text() != m) {
+    $("m").fadeOut(timeFadeInt, function() {
       $(this).text(pad(m)).fadeIn(timeFadeInt);
     });
   }
-  if ($("#s").text() != s) {
-    $("#s").fadeOut(timeFadeInt, function() {
+  if ($("s").text() != s) {
+    $("s").fadeOut(timeFadeInt, function() {
       $(this).text(pad(s)).fadeIn(timeFadeInt);
     });
   }
@@ -42,9 +42,9 @@ function updateTime() {
 
 $(function() {
   $("body.fade").fadeIn(400).removeClass("fade");
-  $("#h").text(pad(h));
-  $("#m").text(pad(m));
-  $("#s").text(pad(s));
+  $("h").text(pad(h));
+  $("m").text(pad(m));
+  $("s").text(pad(s));
   $("#date").text(fullDate())
   setInterval(updateTime, 1000);
 });
