@@ -14,7 +14,7 @@ function setFont(fontindex) {
 }
 
 chrome.storage.sync.get("font", function(items) {
-  if (items[0] == null) {
+  if (items[0] == undefined) {
     setFont("Raleway");
   }
   font = fonts.indexOf(items[0]["font"]);
