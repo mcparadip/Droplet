@@ -9,7 +9,7 @@ var font = 0;
 
 function setFont(fontindex) {
   chrome.storage.sync.set({"font": fonts[fontindex]}, function() {});
-  $("body").css("font-family", fonts[fontindex]);
+  $("body").css("font-family", fonts[fontindex] + " !important");
   font = fontindex;
 }
 
