@@ -14,6 +14,7 @@ function setFont(fontindex) {
 }
 
 chrome.storage.sync.get("font", function(items) {
+  console.log(items)
   if (items[0] == undefined) {
     setFont(0);
     font = 0;
