@@ -14,14 +14,11 @@ function setFont(fontindex) {
 }
 
 chrome.storage.sync.get("font", function(items) {
-  console.log(items)
-  if (items[0] == undefined) {
+  if (items.font == undefined) {
     setFont(0);
     font = 0;
-    console.log("undefined!!!!");
   } else {
-    font = items[0].font;
-    console.log(font)
+    font = items.font;
   }
 });
 
