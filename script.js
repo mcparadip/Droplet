@@ -2,7 +2,33 @@ var today = new Date();
 var h = today.getHours();
 var m = today.getMinutes();
 var s = today.getSeconds();
-var timeFadeInt = 125;
+var fonts = ["Raleway", "Roboto", "Teko", "Amatic SC", "Inconsolata"];
+var font = 0;
+
+// Fonts
+
+function setFont(fontindex) {
+  chrome.storage.sync.set({"font": fonts[fontindex]}, function() {});
+  $("body").css("font-family", fonts[fontindex]);
+  font = fontindex;
+}
+
+chrome.storage.sync.get("font", function(items) {
+  if (items[0] == null) {
+    setFont("Raleway");
+  }
+  font = fonts.indexOf(items[0]["font"]);
+});
+
+$("body").dblclick(function() {
+  newfont = font + 1
+  if (newfont == fonts.length) {
+    newfont = 0;
+  }
+  setFont(newfont)
+});
+
+// Other stuff
 
 function pad(num) {
   var s = "0" + num;
@@ -23,18 +49,18 @@ function updateTime() {
   s = today.getSeconds();
 
   if ($("hour").text() != h) {
-    $("hour").fadeOut(timeFadeInt, function() {
-      $(this).text(pad(h)).fadeIn(timeFadeInt);
+    $("hour").fadeOut(125, function() {
+      $(this).text(pad(h)).fadeIn(125);
     });
   }
   if ($("min").text() != m) {
-    $("min").fadeOut(timeFadeInt, function() {
-      $(this).text(pad(m)).fadeIn(timeFadeInt);
+    $("min").fadeOut(125, function() {
+      $(this).text(pad(m)).fadeIn(125);
     });
   }
   if ($("sec").text() != s) {
-    $("sec").fadeOut(timeFadeInt, function() {
-      $(this).text(pad(s)).fadeIn(timeFadeInt);
+    $("sec").fadeOut(125, function() {
+      $(this).text(pad(s)).fadeIn(125);
     });
   }
   $("#date").text(fullDate())
