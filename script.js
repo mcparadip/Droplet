@@ -19,6 +19,7 @@ chrome.storage.sync.get("font", function(items) {
     font = 0;
   } else {
     font = items.font;
+    setFont(font);
   }
 });
 
