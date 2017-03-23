@@ -75,5 +75,5 @@ $(function() {
   $("sec").text(pad(s));
   $("#date").text(fullDate())
   setInterval(updateTime, 1000);
-  $("body.fade").fadeIn(1000).removeClass("fade");
+  $("html.fade").fadeIn(1000).removeClass("fade");
 });
