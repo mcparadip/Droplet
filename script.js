@@ -70,10 +70,10 @@ function updateTime() {
 }
 
 $(function() {
-  $("body.fade").fadeIn(400).removeClass("fade");
   $("hour").text(pad(h));
   $("min").text(pad(m));
   $("sec").text(pad(s));
   $("#date").text(fullDate())
   setInterval(updateTime, 1000);
+  $("body.fade").fadeIn(1000).removeClass("fade");
 });
