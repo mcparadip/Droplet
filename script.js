@@ -69,11 +69,14 @@ function updateTime() {
   $("#date").text(fullDate())
 }
 
-$(function() {
+$(document).ready(function() {
   $("hour").text(pad(h));
   $("min").text(pad(m));
   $("sec").text(pad(s));
   $("#date").text(fullDate())
   setInterval(updateTime, 1000);
+});
+
+$("#bg").load(function() {
   $("html.fade").fadeIn(1000).removeClass("fade");
 });
