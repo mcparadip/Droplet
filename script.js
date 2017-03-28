@@ -78,5 +78,5 @@ $(document).ready(function() {
 });
 
 $("img#bg").on("load", function() {
-  $("html.fade").fadeIn(500).removeClass("fade");
+  $("html.fade").fadeIn(250).removeClass("fade");
 });
