@@ -6,6 +6,7 @@
 html {
   height: 100%;
   width: 100%;
+  background-color: black;
   -webkit-user-select: none;
 }
 
@@ -41,6 +42,7 @@ img#bg {
   left: 0;
   min-width: 100%;
   min-height: 100%;
+  opacity: 0.875
   z-index: -1;
 }
 
