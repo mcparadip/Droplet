@@ -77,6 +77,6 @@ $(document).ready(function() {
   setInterval(updateTime, 1000);
 });
 
-$(window).load(function() {
+$("img#bg").on("load", function() {
   $("html.fade").fadeIn(1000).removeClass("fade");
 });
