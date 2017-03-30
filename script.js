@@ -5,6 +5,12 @@ var s = today.getSeconds();
 var fonts = ["Amatic SC", "Raleway", "Bebas Neue", "Exo", "Josefin Sans"];
 var font = 0;
 
+// Load Background
+
+if (navigator.onLine == false) {
+  $("#bg").attr("src", "images/" + (Math.floor(Math.random() * 20)+1) + ".jpg");
+}
+
 // Fonts
 
 function setFont(fontindex) {
