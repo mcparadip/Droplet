@@ -2,7 +2,7 @@ var today = new Date();
 var h = today.getHours();
 var m = today.getMinutes();
 var s = today.getSeconds();
-var fonts = ["Amatic SC", "Raleway", "Roboto", "Teko", "Inconsolata"];
+var fonts = ["Amatic SC", "Raleway", "Bebas Neue", "Exo", "Josefin Sans"];
 var font = 0;
 
 // Fonts
