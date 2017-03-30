@@ -3,6 +3,31 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "Amatic SC";
+  src: url("fonts/Amatic SC.ttf");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway.ttf");
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("fonts/Bebas Neue.ttf");
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url("fonts/Exo.ttf");
+}
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("fonts/Josefin Sans.ttf");
+}
+
 html {
   height: 100%;
   width: 100%;
