@@ -3,6 +3,7 @@
   "name": "Droplet",
   "version": "2.0.0",
   "description": "A new tab page.",
+  "offline_enabled": true,
   "icons": {
     "16": "icons/16.png",
     "24": "icons/24.png",
