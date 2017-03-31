@@ -76,7 +76,7 @@ function updateTime() {
   }
   if ($("ampm").text() != ampm) {
     $("ampm").fadeOut(125, function() {
-      $(this).text(pad(s)).fadeIn(125);
+      $(this).text(ampm).fadeIn(125);
     });
   }
   $("#date").text(fullDate());
@@ -86,6 +86,7 @@ $(document).ready(function() {
   $("hour").text(pad(h));
   $("min").text(pad(m));
   $("sec").text(pad(s));
+  $("ampm").text(ampm);
   $("#date").text(fullDate())
   setInterval(updateTime, 1000);
 });
