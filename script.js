@@ -61,7 +61,7 @@ function updateTime() {
 
   if ($("hour").text() != h) {
     $("hour").fadeOut(125, function() {
-      $(this).text(pad(h)).fadeIn(125);
+      $(this).text(pad(h%12)).fadeIn(125);
     });
   }
   if ($("min").text() != m) {
