@@ -2,6 +2,7 @@ var today = new Date();
 var h = today.getHours();
 var m = today.getMinutes();
 var s = today.getSeconds();
+var ampm = (h >= 12) ? "PM" : "AM";
 var fonts = ["Amatic SC", "Raleway", "Bebas Neue", "Exo", "Josefin Sans"];
 var font = 0;
 
@@ -56,6 +57,7 @@ function updateTime() {
   h = today.getHours();
   m = today.getMinutes();
   s = today.getSeconds();
+  ampm = (h >= 12) ? "PM" : "AM";
 
   if ($("hour").text() != h) {
     $("hour").fadeOut(125, function() {
@@ -72,7 +74,12 @@ function updateTime() {
       $(this).text(pad(s)).fadeIn(125);
     });
   }
-  $("#date").text(fullDate())
+  if ($("ampm").text() != ampm) {
+    $("ampm").fadeOut(125, function() {
+      $(this).text(pad(s)).fadeIn(125);
+    });
+  }
+  $("#date").text(fullDate());
 }
 
 $(document).ready(function() {
