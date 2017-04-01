@@ -59,7 +59,7 @@ function updateTime() {
   s = today.getSeconds();
   ampm = (h >= 12) ? "PM" : "AM";
 
-  if ($("hour").text() != h) {
+  if ($("hour").text() != h%12) {
     $("hour").fadeOut(125, function() {
       $(this).text(pad(h%12)).fadeIn(125);
     });
@@ -83,7 +83,7 @@ function updateTime() {
 }
 
 $(document).ready(function() {
-  $("hour").text(pad(h));
+  $("hour").text(pad(h%12));
   $("min").text(pad(m));
   $("sec").text(pad(s));
   $("ampm").text(ampm);
