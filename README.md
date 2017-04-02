@@ -8,7 +8,7 @@ Double-click to change the font! There are five fonts available.
 
 This extension if completely free and open-source. If you appreciate my work, feel free to donate!
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-brightgreen.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=H3JFSE4USVTGQ&lc=US&item_name=Droplet&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
+[![Donate](https://img.shields.io/badge/donate-paypal-blue.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=H3JFSE4USVTGQ&lc=US&item_name=Droplet&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
 
 # Contributing
 
